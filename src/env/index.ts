@@ -5,7 +5,7 @@ import { config } from 'dotenv'
 
 if (process.env.NODE_ENV == 'test') {
     console.log('testeeeee')
-    config({ path: '.env.test' })
+    config({ path: '.env.test', override: true })
 } else {
     config()
 }

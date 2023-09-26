@@ -12,7 +12,11 @@ export const config = {
     connection: {
         filename: env.DATABASE_URL
     },
-    useNullAsDefault: true
+    useNullAsDefault: true,
+    migrations: {
+        extension: 'ts',
+        directory: './migrations'
+    }
 };
 
 export const db = knex(config);
