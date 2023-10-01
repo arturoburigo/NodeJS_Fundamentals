@@ -1,5 +1,5 @@
 node_modules
-db/app.db
+db/*.db
 .env
 .env.test
 dist
